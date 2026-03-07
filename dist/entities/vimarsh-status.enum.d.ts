@@ -1,0 +1,8 @@
+export declare enum VimarshStatus {
+    DRAFT = "DRAFT",
+    DELIBERATION = "DELIBERATION",
+    VOTING = "VOTING",
+    PASSED = "PASSED",
+    REJECTED = "REJECTED",
+    ARCHIVED = "ARCHIVED"
+}

@@ -1,0 +1,30 @@
+import { VimarshStatus } from './vimarsh-status.enum';
+import { VimarshType } from './vimarsh-type.enum';
+import { VimarshPost } from './vimarsh-post.entity';
+import { VimarshVote } from './vimarsh-vote.entity';
+import { VimarshPoll } from './vimarsh-poll.entity';
+export declare class VimarshThread {
+    id: string;
+    title: string;
+    samitiId: string;
+    currentSamitiId: string;
+    isNative: boolean;
+    authorUsername: string;
+    assignedByUsername: string;
+    status: VimarshStatus;
+    vimarshType: VimarshType;
+    currentDraftNumber: number;
+    postCount: number;
+    isLocked: boolean;
+    gazetteId: string;
+    voteForCount: number;
+    voteAgainstCount: number;
+    voteAbstainCount: number;
+    createdAt: Date;
+    updatedAt: Date;
+    votingStartedAt: Date;
+    votingEndedAt: Date;
+    posts: VimarshPost[];
+    votes: VimarshVote[];
+    polls: VimarshPoll[];
+}
